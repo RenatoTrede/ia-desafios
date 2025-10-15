@@ -15,26 +15,18 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 .survey-header img{height:40px}
 .instructor-name{margin:0;color:var(--muted);font-weight:600}
 
-.question-slide{display:none}
-.active-slide{display:block;animation:fade .25s ease}
-@keyframes fade{from{opacity:.6;transform:translateY(2px)}to{opacity:1;transform:translateY(0)}}
-
 h1,h2{margin:0 0 8px}
 p{margin:6px 0 12px}
 label{display:block;margin:12px 0 6px;font-weight:600}
-input[type="text"],select,textarea{
+input[type="text"],textarea{
   width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:10px;background:#fff;font-size:15px
 }
 textarea{resize:vertical}
 
-#navigation{display:flex;align-items:center;gap:10px;margin-top:20px}
 .nav-btn{border:1px solid var(--border);background:#fff;padding:10px 14px;border-radius:10px;cursor:pointer}
 .nav-btn:hover{background:#f3f4f6}
 .nav-btn.primary{background:var(--primary);color:#fff;border-color:var(--primary)}
 .nav-btn.primary:hover{background:#1669d2}
-
-#progress-bar-container{flex:1;height:6px;background:#eef2ff;border-radius:999px;overflow:hidden}
-#progress-bar{height:100%;width:0;background:linear-gradient(90deg,var(--primary),#5aa4ff);transition:width .25s ease}
 
 .hint{font-size:13px;color:var(--muted)}
 .error{color:var(--danger);font-weight:600}
