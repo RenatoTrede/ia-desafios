@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Propor Desafio de IA — Pós</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div id="survey-box">
+      <div class="survey-header">
+        <img src="logo.png" alt="Logo" onerror="this.style.display='none'">
+        <p class="instructor-name">Renato Trede</p>
+      </div>
+
+      <h1>Proponha seu Desafio</h1>
+      <p class="hint">Apenas <strong>Título</strong> e <strong>Descrição</strong>. Depois você verá uma confirmação de envio.</p>
+
+      <label for="desafio_titulo">Título (curto, até 80 caracteres):</label>
+      <input type="text" id="desafio_titulo" maxlength="80" placeholder="Ex.: Classificar padrões de marcha com IA">
+
+      <label for="desafio_desc">Descrição (até 300 caracteres):</label>
+      <textarea id="desafio_desc" maxlength="300" rows="5" placeholder="Qual problema resolve? Como a IA entra? Qual o produto final?"></textarea>
+
+      <button id="btn-enviar" class="nav-btn primary">Enviar Proposta</button>
+      <div id="feedback" class="hint"></div>
+
+      <hr style="margin:20px 0;border:none;border-top:1px solid #e5e7eb">
+      <p class="hint">Após todos enviarem, use o link de <strong>votação</strong> para escolher até 3 ideias.</p>
+    </div>
+  </div>
+
+  <script src="propostas.js"></script>
+</body>
+</html>
